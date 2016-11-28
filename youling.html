@@ -4,15 +4,150 @@
 	<meta charset="UTF-8">
 	<title>youling</title>
 	<link rel="stylesheet" href="youling.css">
+	<script src="jquery-1.8.3.js"></script>
 </head>
 <body>
 	<div class="main">
-		<div class="title">
-			<h1>aaaa</h1>
-			<h1>bbbb</h1>
-			<h1>cccc</h1>
-			<h1>dddd</h1>
+		<pre>Miracles sometimes occur, but one has to work terribly for them.</pre>
+		<p class="tc">中国传统色彩</p>
+		<p class="te">Chinese Traditional Colors</p>
+		<hr>
+		<div class="col">
+			<div class="cb c11">
+				<p>精白</p>
+				<p>#ffffff</p>
+			</div>	
+			<div class="cb c12">
+				<p>银白</p>
+				<p>#e9e7ef</p>
+			</div>	
+			<div class="cb c13">
+				<p>铅白</p>
+				<p>#f0f0f4</p>
+			</div>	
+			<div class="cb c14">
+				<p>霜色</p>
+				<p>#e9f1f6</p>
+			</div>	
+			<div class="cb c15">
+				<p>雪白</p>
+				<p>#f0fcff</p>
+			</div>	
+			<div class="cb c16">
+				<p>莹白</p>
+				<p>#e3f9fd</p>
+			</div>	
+		</div>
+		<div class="col">
+			<div class="cb c21">
+				<p>樱草色</p>
+				<p>#eaff56</p>
+			</div>
+			<div class="cb c21">
+				<p>鹅黄</p>
+				<p>#fff134</p>
+			</div>
+			<div class="cb c21">
+				<p>鸭黄</p>
+				<p>#faff72</p>
+			</div>
+			<div class="cb c21">
+				<p>杏黄</p>
+				<p>#ffa631</p>
+			</div>
+			<div class="cb c21">
+				<p>橙黄</p>
+				<p>#ffa400</p>
+			</div>
+			<div class="cb c21">
+				<p>橙色</p>
+				<p>#fa8c35</p>
+			</div>
+		</div>	
+		<div class="col">
+			<div class="cb c31">
+				<p>松花色</p>
+				<p>#bce672</p>
+			</div>	
+			<div class="cb c32">
+				<p>柳黄</p>
+				<p>#c9dd22</p>
+			</div>	
+			<div class="cb c33">
+				<p>嫩绿</p>
+				<p>#bddd22</p>
+			</div>	
+			<div class="cb c34">
+				<p>柳绿</p>
+				<p>#afdd22</p>
+			</div>	
+			<div class="cb c35">
+				<p>葱黄</p>
+				<p>#a3d900</p>
+			</div>	
+			<div class="cb c36">
+				<p>葱绿</p>
+				<p>#9ed900</p>
+			</div>	
+		</div>
+		<div class="col">
+			<div class="cb c41">
+				<p>朱砂</p>
+				<p>#ff461f</p>
+			</div>	
+			<div class="cb c42">
+				<p>火红</p>
+				<p>#ff2d51</p>
+			</div>	
+			<div class="cb c43">
+				<p>朱膘</p>
+				<p>#f36838</p>
+			</div>	
+			<div class="cb c44">
+				<p>妃色</p>
+				<p>#ed5736</p>
+			</div>	
+			<div class="cb c45">
+				<p>洋红</p>
+				<p>#ff4777</p>
+			</div>	
+			<div class="cb c46">
+				<p>品红</p>
+				<p>#f00056</p>
+			</div>	
+		</div>
+		<div class="col">
+			<div class="cb c51">
+				<p>蔚蓝</p>
+				<p>#70f3ff</p>
+			</div>	
+			<div class="cb c52">
+				<p>蓝</p>
+				<p>#44cef6</p>
+			</div>	
+			<div class="cb c53">
+				<p>碧蓝</p>
+				<p>#3eede7</p>
+			</div>	
+			<div class="cb c54">
+				<p>石青</p>
+				<p>#1685a9</p>
+			</div>	
+			<div class="cb c55">
+				<p>靛青</p>
+				<p>#177cb0</p>
+			</div>	
+			<div class="cb c56">
+				<p>靛蓝</p>
+				<p>#065279</p>
+			</div>	
 		</div>
 	</div>
 </body>
+<script>
+	$(".cb").each(function(){
+		cl=$(this).find("p").last().text()
+		$(this).css("background",cl)
+	})
+</script>
 </html>
